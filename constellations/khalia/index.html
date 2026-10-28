@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <style>
+      @font-face { font-family: "LC Sans"; src: url("fonts/inter-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "LC Sans"; src: url("fonts/inter-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+      @font-face { font-family: "LC Serif"; src: url("fonts/eb-garamond-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "LC Serif"; src: url("fonts/eb-garamond-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+      @font-face { font-family: "LC Serif"; src: url("fonts/eb-garamond-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #02040e; font-family: "LC Sans", sans-serif; }
+      #root { position: relative; width: 1080px; height: 1920px; }
+      #sky { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="132.2" data-width="1080" data-height="1920">
+      <canvas id="sky" class="clip" width="1080" height="1920" data-start="0" data-duration="132.2" data-track-index="0"></canvas>
+    </div>
+    <script src="gsap.min.js"></script>
+    <script src="cast.js"></script>
+    <script src="lc-core.js"></script>
+    <script src="lc-render.js"></script>
+    <script>
+      // The canvas is drawn from "hf-seek"; this empty paused timeline only fixes the length.
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, window.LC.TOTAL);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
