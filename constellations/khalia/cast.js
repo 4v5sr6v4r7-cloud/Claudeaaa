@@ -50,7 +50,7 @@ window.LC_CONFIG = {
     { id: "stephen", name: "Stephen", color: "#3EE6C0", side: "R", rank: 2, from: 21, origin: "right",
       changes: [{ at: 24, gap: 0.55, rename: "Stephen ♥", flash: true, label: "becomes my husband" }],
       star: { at: 80, x: 770, y: 690 } },
-    { id: "ren", name: "Ren", color: "#8FF0E8", side: "R", rank: 7, from: 21, origin: "right", star: { at: 73, x: 975, y: 800 } },
+    { id: "ren", name: "Ren", color: "#8FF0E8", side: "R", rank: 7, from: 21, origin: "right", star: { at: 84, x: 975, y: 800 } },
     { id: "johna", name: "Johna", color: "#B5EB6A", side: "R", rank: 8, from: 21, origin: "right", star: { at: 60, x: 1000, y: 290 } },
     { id: "steve", name: "Steve", color: "#7FE09A", side: "R", rank: 9, from: 21, origin: "right", star: { at: 56, x: 1000, y: 590 } },
     { id: "nana", name: "Nana", color: "#F28AD8", side: "R", rank: 10, from: 21, origin: "right", star: { at: 25, x: 860, y: 95 } },
